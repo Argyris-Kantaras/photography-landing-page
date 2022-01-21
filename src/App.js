@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Details from "./components/Details";
+import ShowPictures from "./components/ShowPictures";
 
-function App() {
+function App(props) {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <h1 className="title">Photogun</h1>
       </header>
+      <Details />
+      <ShowPictures />
+      <footer>
+        <p>
+          If you are interested in pro photographers then don't hesitate to
+          contact us
+        </p>
+        <a className="link" href="">
+          contact-us
+        </a>
+      </footer>
     </div>
   );
 }
