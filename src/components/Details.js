@@ -8,7 +8,7 @@ import style from "./details.module.css";
 function Details() {
   return (
     <div className={style.detailsList}>
-      <ul>
+      <ul className={style.listDetailsCont}>
         <h3 className={style.sectionText}>
           In Photogun we ensure that high quality pictures is a must and our
           priority!

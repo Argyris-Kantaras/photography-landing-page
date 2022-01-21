@@ -16,13 +16,13 @@
 
 .text {
   display: inline-block;
-  width: 50%;
+  width: 80%;
 }
 
 .iconContainer {
   background-color: rgb(228, 234, 236);
   width: 20%;
-  height: 5rem;
+  height: auto;
   position: relative;
   left: 40%;
   border-radius: 1rem;
