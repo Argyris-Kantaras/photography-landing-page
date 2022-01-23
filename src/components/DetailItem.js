@@ -1,6 +1,7 @@
 import style from "./detailsItem.module.css";
 
 function DetailItem(props) {
+  ///
   return (
     <li className={style.listItem}>
       <div className={style.iconContainer}>
