@@ -1,9 +1,8 @@
 .detailsList {
-  display: flexbox;
-  float: left;
+  display: inline-block;
   background-color: rgb(167, 167, 167);
   width: 30%;
-  height: auto;
+  height: 90%;
   font-size: 1em;
 }
 
@@ -13,4 +12,5 @@
 
 .listDetailsCont {
   text-align: center;
+  display: inline;
 }

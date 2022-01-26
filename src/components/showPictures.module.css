@@ -3,9 +3,24 @@
   background-color: rgb(124, 123, 123);
   float: right;
   width: 68%;
+  overflow: hidden;
   /* grid-template-columns: repeat(2, max(25rem)); */
   row-gap: 0.2rem;
   column-gap: 0.2rem;
+}
+@keyframes popImgIn {
+  from {
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+@keyframes popImgDown {
+  from {
+  }
+  to {
+    transform: translateX(0%);
+  }
 }
 
 .img1 {
@@ -16,6 +31,10 @@
   grid-row-end: 4;
   grid-column-start: 1;
   grid-column-start: 2;
+  transform: translateX(350%);
+  animation-name: popImgIn;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
 }
 
 .img2 {
@@ -25,6 +44,11 @@
   grid-row-end: 2;
   grid-column-start: 2;
   grid-column-start: 3;
+  transform: translateY(-150%);
+  animation-name: popImgDown;
+  animation-duration: 6s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
 }
 .img3 {
   width: 100%;
@@ -33,6 +57,11 @@
   grid-row-end: 2;
   grid-column-start: 3;
   grid-column-start: 4;
+  transform: translateY(-150%);
+  animation-name: popImgDown;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-delay: 4s;
 }
 
 .img4 {
@@ -41,6 +70,18 @@
   grid-row-end: 3;
   grid-column-start: 2;
   grid-column-start: 3;
+  transform: translateX(200%);
+  animation-name: popImgIn;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+  animation-delay: 2s;
+}
+@keyframes showImg {
+  from {
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .img5 {
@@ -50,6 +91,11 @@
   grid-row-end: 4;
   grid-column-start: 2;
   grid-column-start: 3;
+  opacity: 0;
+  animation-name: showImg;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
 }
 
 .img6 {
@@ -59,4 +105,9 @@
   grid-row-end: 4;
   grid-column-start: 3;
   grid-column-start: 4;
+  opacity: 0;
+  animation-name: showImg;
+  animation-duration: 6s;
+  animation-fill-mode: forwards;
+  animation-delay: 5s;
 }
